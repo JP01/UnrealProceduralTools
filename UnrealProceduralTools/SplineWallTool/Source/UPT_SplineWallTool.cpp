@@ -1,4 +1,4 @@
-#include "SplineWallTool/UPT_SplineWallTool.h"
+#include "UPT_SplineWallTool.h"
 
 #include <Kismet/KismetMathLibrary.h>
 
