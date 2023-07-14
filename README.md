@@ -3,6 +3,10 @@ Collection of Unreal tools for procedural content generation.
 
 ## Spline Wall Tool
 A tool used to generate wall sections to entire rooms.
+For now the easiest way to try out the tool is to copy the [Blueprint Prototype](UnrealProceduralTools/SplineWallTool/BlueprintPrototype).
+
+A faster, more maintainable [C++ version](UnrealProceduralTools/SplineWallTool/Source) is also available and can be added to your
+own project and compiled as usual.
 
 Usage overview video:
 
