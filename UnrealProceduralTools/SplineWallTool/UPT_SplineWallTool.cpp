@@ -51,7 +51,8 @@ void AUPT_SplineWallTool::OnConstruction(const FTransform& Transform)
 
 			// Rotate by 90 deg as this rotation is hardcoded into the wall meshes we are using
 			FRotator Rotation = UKismetMathLibrary::FindLookAtRotation(PointA, PointB);
-			Rotation = UKismetMathLibrary::ComposeRotators(Rotation, WallRotationOffset.Rotation());
+			Rotation = UKismetMathLibrary::ComposeRotators(
+				Rotation, FRotator(WallRotationOffset.X, WallRotationOffset.Y, WallRotationOffset.Z));
 
 			// Create the wall section instance
 			InstancedWallMesh->AddInstance(
